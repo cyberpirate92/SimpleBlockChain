@@ -14,7 +14,7 @@ public class Main {
             blockChain.addBlock(block2);
             blockChain.addBlock(block3);
 
-            System.out.println(String.format("%64s\t%13s\t%7s\t%s", "Previous hash", "Timestamp", "Nonce", "Transaction Data"));
+            System.out.println(String.format("%64s\t%13s\t%7s\t%s", "Previous Block's hash", "Timestamp", "Nonce", "Transaction Data"));
             for (Block block: blockChain.chain) {
                 System.out.println(block);
             }
